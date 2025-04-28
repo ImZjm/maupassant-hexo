@@ -129,6 +129,8 @@ widgets: ## Seven widgets in sidebar provided: search, info, category, tag, rece
   # - recent_comments
   # - links
 
+toc: true   ## 生成目录总开关，需在Front-matter中配置toc: true
+
 info:
   avatar: /img/avatar.png
   avatar_link: /about/ ## 点击头像跳转的链接

@@ -32,11 +32,15 @@ html(lang=config.language)
       if theme.widgets_on_small_screens
         .pure-u-1.pure-u-md-1-4: #sidebar
           each item in theme.widgets
-            != partial('_widget/' + item + '.pug', null, {cache: !config.relative_link})
+            != partial('_widget/' + item + '.pug')
+          if theme.toc == true
+            != partial('_widget/toc.pug')
       else
         .pure-u-1-4.hidden_mid_and_down: #sidebar
           each item in theme.widgets
-            != partial('_widget/' + item + '.pug', null, {cache: !config.relative_link})
+            != partial('_widget/' + item + '.pug')
+          if theme.toc == true
+            != partial('_widget/toc.pug')
       .pure-u-1.pure-u-md-3-4
         != partial('_partial/footer.pug')
 

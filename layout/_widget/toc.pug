@@ -1,0 +1,8 @@
+if page.toc
+  #toc.widget.hidden_mid_and_down
+    .widget-title
+      i(class='fa fa-list-ul')
+      span=" " + __('contents')
+
+    ul.dsq-widget-list
+      != toc(page.content)
