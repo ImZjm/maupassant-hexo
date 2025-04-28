@@ -100,6 +100,11 @@ totop: true ## If you want to use the rocketship button to return to the top, se
 external_css: false ## If you want to load an external CSS file, set the value to true and create a file named "external.css" in the source/css folder.
 post_content_length: 180 ## Set the length of the post summary displayed on home page when no description written.
 icp: ## China mainland only, show icp info on the bottom.
+  enable: false
+  mps: ## 公网安备备案号
+  mps_url: ## 点击跳转链接
+  miit: ## 工信部备案号
+  miit_url: ## 点击跳转链接
 
 menu:
   - page: home
@@ -116,30 +121,31 @@ menu:
     icon: fa-rss
 
 widgets: ## Seven widgets in sidebar provided: search, info, category, tag, recent_posts, recent_comments and links.
-  - search
-  - info
-  - category
-  - tag
-  - recent_posts
-  - recent_comments
-  - links
+  # - search
+  # - info
+  # - category
+  # - tag
+  # - recent_posts
+  # - recent_comments
+  # - links
 
 info:
   avatar: /img/avatar.png
+  avatar_link: /about/ ## 点击头像跳转的链接
   discription: To be a better man.
   outlinkitem:
-    - name: twitter
-      outlink: https://twitter.com/username
-      message: Twitter
-    - name: envelope
-      outlink: mailto:admin@domain.com
-      message: Email
-    - name: github
-      outlink: https://github.com/username
-      message: Github
-    - name: rss
-      outlink: /atom.xml
-      message: RSS
+    # - name: twitter
+    #   outlink: https://twitter.com/username
+    #   message: Twitter
+    # - name: envelope
+    #   outlink: mailto:admin@domain.com
+    #   message: Email
+    # - name: github
+    #   outlink: https://github.com/username
+    #   message: Github
+    # - name: rss
+    #   outlink: /atom.xml
+    #   message: RSS
 
 links:
   - title: site-name1
